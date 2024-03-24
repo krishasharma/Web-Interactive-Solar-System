@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Assignment 5 Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: rgb(128, 0, 107);
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Program Assignment 5: Solar System Simulation with Three.js</h1>
+
+    <section>
+        <h2>Student Information</h2>
+        <p><strong>Name:</strong> [Krisha Sharma]</p>
+        <p><strong>Login ID:</strong> [krvsharm]</p>
+        <p><strong>Date:</strong> [03.17.2024]</p>
+    </section>
+
+    <section>
+        <h2>Implementation Overview</h2>
+        <p>This project involves creating an interactive 3D simulation of the solar system using Three.js. The simulation features accurately modeled planets that orbit around the Sun based on their real orbital speeds. Users can interact with the scene through mouse and touch controls, enabling them to explore the solar system in a visually engaging and educational manner.</p>
+    </section>
+
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Start and Stop Animation: Users can initiate or halt the orbital movements of the planets by clicking dedicated start and stop buttons, providing an interactive way to pause and resume the simulation.</li>
+            <li>Interactive Controls: The scene supports zooming in and out through mouse wheel actions or pinch gestures on touch devices, and a zoom out button is available for quickly resetting the view. Users can also click and drag to rotate the view, exploring the solar system from different angles.</li>
+            <li>Realistic Planetary Textures: While actual image textures are not used, the planets are rendered with materials that mimic the appearance of planetary surfaces and atmospheres, enhancing the realism of the simulation.</li>
+            <li>Adjusted Orbit Distances: The orbits of the outer planets have been scaled down for a more compact and visually accessible representation, while still maintaining a relative sense of the vast distances in the solar system.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Running the Project</h2>
+        <p>To experience the solar system model:</p>
+        <ol>
+            <li>Clone or download the project files from the provided repository link.</li>
+            <li>If you don't have a local web server, consider using a simple server like <code>http-server</code> in Node.js or any other equivalent. This is because opening <code>index.html</code> directly in a browser might not work due to browser security restrictions on file URLs.</li>
+            <li>After setting up the server, navigate to the project's directory and run the server.</li>
+            <li>Open your web browser and enter the local server address provided by your server tool (e.g., <code>http://localhost:8080</code>) to view the project.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Technical Challenges and Solutions</h2>
+        <ul>
+            <li>Animating Planetary Orbits: Calculating and animating the planets' orbits to reflect real orbital speeds posed a challenge. This was addressed by incrementing the animation state based on a 60 FPS target, using Three.js's `requestAnimationFrame` for smooth animations.</li>
+            <li>Interactivity Implementation: Implementing user controls for zoom and rotation required integrating Three.js's camera and control systems, specifically using `OrbitControls` for intuitive scene manipulation.</li>
+            <li>Performance Optimization: Initially, the simulation's performance was hindered by the complex geometry of the planets. This issue was mitigated by adjusting the level of detail and optimizing rendering settings, ensuring a smooth user experience even on less powerful devices.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conclusions and Future Work</h2>
+        <p>The solar system simulation project has provided a comprehensive introduction to Three.js and 3D web graphics programming. The implementation of interactive controls and realistic animation offers users an engaging way to learn about the solar system. Future enhancements could include the integration of more detailed textures, the addition of moons for each planet, and the implementation of educational tooltips that provide information about each celestial body when clicked.</p>
+    </section>
+
+    <section>
+        <h2>Development</h2>
+        <p>
+            Developed by Krisha Sharma, this project leverages Three.js to render a solar system model effectively.
+        </p>
+        <h2>Check out the Solar System animation:</h2>
+            <!-- Link to index.html -->
+            <a href="driver.html">View Solar System</a>
+    </section>
+</html>
